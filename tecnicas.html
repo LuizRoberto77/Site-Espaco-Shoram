@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Técnicas - Espaço Shoram</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="description" content="Empresa de Massoterpia com ênfase em quick-massage para empresas e eventos.">
+	<meta name="keywords" content="Massoterapia, Quick-massage, eventos, massagem">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="Cipher Glass">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script src="js/jquery.js"></script>
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+	<!-- <script src="js/jquery.js"></script>
+	<script src="js/eventos.js"></script> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+	<link rel="icon" href="img/icon.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+
+	h1{
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		h4{
+			font-weight: bold;
+		}
+
+		.tecnicas{
+			width: 90%;
+			/*float: left;*/
+			/*padding: 3% 4%;*/
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		/*.tecnicamain{
+			width: 100%;
+			background-color: #eee;
+			text-align: left;
+			border-radius: 7px;
+			margin-bottom: 3%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.tecnicamain img{
+			border-radius: 7px 7px 0 0;
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+		}
+
+		.explicacaomain{
+			padding: 7%;
+			width: 100%;
+			margin-left: 0;
+			border: 0;
+		}
+
+		.explicacaomain a{
+			font-size: 1.5em;
+			color: #130400;
+		}
+
+		.explicacaomain h4{
+			font-size: 1.6em;
+			color: #130400;
+			margin-top: 2%;
+		}
+
+		.explicacaomain p{
+			color: #130400;
+			margin-top: 6%;
+			line-height: 1.5em;
+		}*/
+
+		/*secundarias*/
+
+		.tecnicaminor{
+			width: 100%;
+			background-color: #eee;
+			text-align: left;
+			border-radius: 7px;
+			margin-bottom: 3%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.tecnicaminor img{
+			border-radius: 7px 7px 0 0;
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
+		}
+
+		.explicacaominor{
+			padding: 7%;
+			width: 100%;
+			margin-left: 0;
+			border: 0;
+		}
+
+		.explicacaominor a{
+			font-size: 1.5em;
+			color: #130400;
+		}
+
+		.explicacaominor h4{
+			font-size: 1.6em;
+			color: #130400;
+			margin-top: 2%;
+		}
+
+		.explicacaominor p{
+			color: #130400;
+			margin-top: 6%;
+			line-height: 1.5em;
+		}
+
+		/*------------*/
+
+		.iragendar{
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		.iragendar:hover{
+			color: #6d70a7;
+			text-decoration: none;
+		}
+
+		@media screen and (min-width: 960px){
+
+			.tecnicamain:hover{
+				border: solid thin black;
+			}
+
+			.tecnicamain{
+				width: 49%;
+				float: left;
+				margin-right: 2%;
+				min-height: 54em;
+				max-height: 54em;
+			}
+
+			.tecnicamain:nth-child(2){
+				margin-right: 0;
+			}
+
+			.tecnicamain:nth-child(4){
+				margin-right: 0;
+			}
+
+			.tecnicaminor{
+				width: 100%;
+				background-color: #eee;
+				text-align: left;
+				border-radius: 7px;
+				margin-bottom: 3%;
+				margin-left: auto;
+				margin-right: auto;
+				float: right;
+				position:relative
+			}
+
+			.tecnicaminor img{
+				border-radius: 7px 0 0 7px;
+				margin-left: auto;
+				margin-right: auto;
+				width: auto;
+				height: 15em;
+				width: 17em;
+				float: left;
+			}
+
+			.explicacaominor{
+				width: 100%;
+				padding-left: 18.5em;
+				padding-bottom: 0;
+				padding-right: 1%;
+				padding-top: 1%;
+			}
+
+			.explicacaominor a{
+				font-size: 1.4em;
+				color: black;
+				padding: 0;
+				margin: 0;
+				padding-right: 1%;
+				padding-bottom: 1%;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
+
+			.explicacaominor h4{
+				font-size: 1.6em;
+				color: black;
+				margin-top: 0;
+				font-size: 1.4em;
+			}
+
+			.explicacaominor p{
+				color: black;
+				line-height: 1.5em;
+				margin-top: 1%;
+				font-size: 1.3em;
+				margin-bottom: 0;
+			}
+
+			.tecnicaminor:hover{
+				border: solid thin black;
+			}
+
+		}
+
+		/*outras medidas para o media na responsividade das tecnicas? indo sempre de 4 > 2 > 1 ou 4 >3 > 2 >1 ?*/
+
+
+		/*@media screen and (min-width: 960px){
+
+			.tecnicamain{
+				width: 22%;
+				min-height: 72em;
+			}
+
+			.tecnicamain:nth-child(1){
+				margin-right: 4%;
+			}
+
+			.tecnicamain:nth-child(2){
+				margin-right: 4%;
+			}
+
+			.tecnicamain:nth-child(3){
+				margin-right: 4%;
+			}
+
+			.tecnicamain:nth-child(4){
+				margin-right: 0;
+			}
+
+		}*/
+
+	</style>
+	
+</head>
+<body>
+	<div id="wrap">
+	<hr class="linha">
+
+	<a href="login.html" id="entrarcadastro">Entrar/Cadastre-se</a>
+
+	<header class="cabecalho container">
+		
+		<a href="index.html"><h1 class="logo"></h1></a>
+		<button class="btn-menu">
+			<i class="fa fa-bars fa-lg"></i>
+		</button>
+		<nav class="menu">
+			
+			<a class="btn-close">
+				<i class="fa fa-times" aria-hidden="true"></i>
+			</a>
+
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="trajetoria.html">Trajetória</a></li>
+				<li><a href="tecnicas.html" class="atual">Técnicas</a></li>
+				<li><a href="agendamento.html">Agendamento</a></li>
+				<li><a href="contato.html">Contato</a></li>
+				<li><a href="login.html" id="login">Login</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!-- Conteudo -->
+	<div id="conteudo">
+		<h1>Técnicas</h1>
+	<br>
+
+	<main class="tecnicas">
+
+		<!-- TECNICAS PRINCIPAIS -->
+
+		<article class="tecnicaminor">
+			<img src="img/massage01.jpg" alt="Técnica 1">
+			<div class="explicacaominor">
+				<h4>Quick Massage</h4>
+				<p id="quicktext">Massagem rápida, realizada em uma cadeira específica, é realizada com manobras orientais, para proporcionar relaxamento muscular, tem a duração em média de 15 minutos, promovendo alívio imediato.</p>
+				<a href="agendamento.html" class="iragendar">Clique aqui para agendar.</a>
+			</div>
+		</article>
+
+		<article class="tecnicaminor">
+			<img src="img/massage02.jpg" alt="Técnica 2">
+			<div class="explicacaominor">
+				<h4>Auriculoterapia</h4>
+				<p id="auritext">Técnica Oriental que trata o corpo humano através de pontos na orelha quando estimulados promove bem-estar e alívio das dores localizadas.  Utiliza-se sementes, para ativar pontos reflexos específico na orelha de acordo com a necessidade de cada pessoa analisada terapeuticamente.	</p>
+				<a href="agendamento.html" class="iragendar">Clique aqui para agendar.</a>
+			</div>
+		</article>
+
+		<article class="tecnicaminor">
+			<img src="img/massage03.jpg" alt="Técnica 3">
+			<div class="explicacaominor">
+				<h4>Reflexologia podal</h4>
+				<p id="reflextext">Massagem Oriental promove benefícios como relaxamento e bem-estar, a reflexologia é uma técnica que utiliza a pressão dos dedos em pontos específicos que estão conectados e correspondem a todas as partes do corpo</p>
+				<a href="agendamento.html" class="iragendar">Clique aqui para agendar.</a>
+			</div>
+		</article>
+
+		<article class="tecnicaminor">
+			<img src="img/massage04.jpg" alt="Técnica 4">
+			<div class="explicacaominor">
+				<h4>Massagem Clássica</h4>
+				<p>A massagem clássica pode ser definida como uma compressão metódica e rítmica do corpo, ou parte dele, para que se obtenham efeitos terapêuticos. É um conjunto de diversas técnicas manuais que atuam nos tecidos corporais, com efeito sob o sistema nervoso, muscular, circulatório e energético, mobilizando estruturas variadas.</p>
+				<a href="agendamento.html" class="iragendar">Clique aqui para agendar.</a>
+			</div>
+		</article>
+
+		<!-- TECNICAS SECUNDARIAS -->
+
+		<article class="tecnicaminor">
+			<img src="img/massage05.jpg" alt="Técnica 5">
+			<div class="explicacaominor">
+				<h4>Drenagem Linfática</h4>
+				<p>A drenagem linfática é uma técnica de massagem que trabalha o sistema linfático, por meio de movimentos específicos, estimula a regeneração dos tecidos, melhora o sistema imunitário, é relaxante e tranquilizante, combate a celulite e a gordura localizada e ainda melhora a ação anti-inflamatória do organismo.</p>
+				<a href="agendamento.html" class="iragendar">Clique aqui para agendar.</a>
+			</div>
+		</article>
+
+		<article class="tecnicaminor">
+			<img src="img/massage06.jpg" alt="Técnica 6">
+			<div class="explicacaominor">
+				<h4>Ventosaterapia</h4>
+				<p>A Ventosaterapia é um método de tratamento baseado na Medicina Tradicional Chinesa, através da aplicação de copos de vidro ou plástico na superfície da pele gerando uma sucção, estimula o sistema nervoso, retirando a energia estagnada, trata gripes, resfriado, tensões musculares e liberando toxinas.</p>
+				<a href="agendamento.html" class="iragendar">Clique aqui para agendar.</a>
+			</div>
+		</article>
+
+		<article class="tecnicaminor">
+			<img src="img/massage07.jpg" alt="Técnica 7">
+			<div class="explicacaominor">
+				<h4>Moxaterapia:</h4>
+				<p> É uma técnica que assim como a acupuntura, utiliza os meridianos de energia para fins terapêuticos. Desobstrui os bloqueios de energia, porém, ao invés de agulhas, utiliza aplicações de calor nos pontos meridianos, proporciona relaxamento físico e mental.</p>
+				<a href="agendamento.html" class="iragendar">Clique aqui para agendar.</a>
+			</div>
+		</article>
+
+		<article class="tecnicaminor">
+			<img src="img/massage08.jpg" alt="Técnica 8">
+			<div class="explicacaominor">
+				<h4>Shiatsu</h4>
+				<p>Conhecido e chamado de “massagem oriental”, o Shiatsu é muito mais do que uma massagem, promove grandes benefícios para o nosso corpo como alivio dores de cabeça e musculares, diminui o estresse, previne doenças e a sensação de bem-estar é também alcançada com esta massagem.</p>
+				<a href="agendamento.html" class="iragendar">Clique aqui para agendar.</a>
+			</div>
+		</article>
+
+		<article class="tecnicaminor">
+			<img src="img/massage09.jpg" alt="Técnica 9">
+			<div class="explicacaominor">
+				<h4>Técnica 9</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+				<a href="agendamento.html" class="iragendar">Clique aqui para agendar.</a>
+			</div>
+		</article>
+
+
+	</main>
+	</div>	
+	<!-- RODAPÉ -->
+
+	<footer class="rodape">
+		<div class="social-icons">
+			<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-google"></i></a>
+			<a href="#"><i class="fa fa-instagram"></i></a>
+			<a href="#"><i class="fa fa-envelope"></i></a>
+		</div>
+		<p class="copyright">Copyright © <a href="www.cipher.glass.com.br" class="direitos">Cipher Glass</a> 2018. Todos os direitos reservados.</p>
+	</footer>
+	</div>
+
+
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+<script>
+	$(".btn-menu").click(function(){
+		$(".menu").show();
+	});
+
+	$(".btn-close").click(function(){
+		$(".menu").hide();
+	});
+</script>
+
+</body>
+</html>

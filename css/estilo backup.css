@@ -1,0 +1,553 @@
+@charset "utf-8";
+
+/*CORES:
+
+Lilás: #c69fc6;
+Milka: #6d70a7;
+Azul: #292864;
+*/
+
+
+
+/*RESET*/
+
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+
+/*TAGS PRINCIPAIS*/
+
+html, body{
+	/*height: 100%;*/
+}
+
+body{
+	/*display: flex;
+	flex-direction: column;
+	height: 100%;*/
+}
+
+h1{
+	font-family: Segoe ui Semibold;
+	font-size: 2em;
+}
+
+h2{
+	font-family: Segoe ui Semibold;
+	font-size: 1.8em;
+}
+
+h3{
+	font-family: Segoe ui Semibold;
+	font-size: 1.6em;
+}
+
+p{
+	font-size: 1.5em;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+}
+
+img{
+	max-width: 100%;
+}
+
+.linha{
+	background-color: #6d70a7;
+	height: 5px;
+	position: top;
+	margin: 0;
+}
+
+#entrarcadastro{
+	font-size: 0px;
+	background-color: white;
+}
+
+#wrap{
+   min-height:100% !important;
+   position:relative;
+   display: flex;
+   flex-direction: column;	
+}
+
+#conteudo{
+   padding-bottom:0%;   /* Height of the footer */
+   padding-top:38%;
+   position: relative;
+   /*float: left;*/
+   min-height: calc(100vh - 162px);
+   /*min-height: 99.4vh;*/
+   z-index: 1;
+   /*flex: 1;*/
+}
+
+
+/*CABEÇALHO*/
+
+.cabecalho{
+	width: 93.5% !important;
+	/*float: left;*/
+	padding: 3% 4%;
+	position: absolute;
+	top: 0;
+	z-index: 5;
+}
+
+.logo{
+	width: 180px;
+	height: 125px;
+	float: left;
+	background: url(../img/shoram_200px.png) center center/180px no-repeat;
+	font-size: 0;
+	margin-top: 0;
+}
+
+.btn-menu{
+	width: 56px;
+	height: 56px;
+	float: right;
+	text-align: center;
+	color: #fff;
+	border-radius: 56px;
+	cursor: pointer;
+	background: #6d70a7;
+	margin-top: 35px;
+}
+
+/*Menu*/
+
+.menu{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 100;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.9);
+}
+
+.btn-close{
+	font-size: 1.5em;
+	color: #fff;
+	float: right;
+	cursor: pointer;
+	margin: 2% 3% 0 0;
+}
+
+.menu ul{
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+.menu li{
+	padding: 1.5%;
+}
+
+.menu li a{
+	font-size: 2em;
+	color: white;
+	/*padding: 1.5% 3%;*/
+}
+
+.menu li a:hover{
+	border: none;
+}
+
+.menu li a:visited{
+	font-size: 2em;
+	color: white;
+	padding: 1.5% 3%;
+}
+
+/*CONTEÚDO - Index*/
+
+#myCarousel{
+	padding: 0;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 0;
+	display: table;
+}
+
+.carousel-caption h3{
+    background-color: rgba(0,0,0,0.4);
+}
+
+.carousel-caption p{
+    background-color: rgba(0,0,0,0.4);
+}
+
+.glyphicon{
+	text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black,
+    -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+}
+
+#intro{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	text-indent: 1.5em;
+}
+
+/*RODAPE*/
+
+.rodape{
+	width: 100%;
+	/*float: left;*/
+	padding: 3% 4%;
+	text-align: center;
+	background: #ccc;
+	position: relative;
+	margin-top: 7px;
+	margin-bottom: 0;
+	bottom: 0;
+	min-height: 135px;
+	z-index: 0;
+	/*flex-shrink: 0;*/
+}
+
+.social-icons{
+	margin-top: 1%;
+}
+
+.social-icons a{
+	font-size: 2em;
+	color: black;
+	margin-right: 3%;
+}
+
+.social-icons a:last-child{
+	margin-right: 0;
+}
+
+.social-icons a:hover{
+	color: #6d70a7;
+}
+
+.copyright{
+	margin-top: 2%;
+	color: black;
+}
+
+.copyright a:hover{
+	text-decoration: none;
+	color: #6d70a7;
+}
+
+.copyright a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+.direitos{
+	text-decoration: none;
+	color: black;
+}
+
+
+/*Media Types*/
+
+/*print*/
+
+@media print{
+	.title h2{
+		font-size: 2.5em;
+		color: red;
+		font-weight: 700;
+	}
+
+	.title h3{
+		font-size: 1.5em;
+		color: blue;
+	}
+}
+
+/*ENTRE 320 E 360*/
+
+@media screen and (min-width: 360px){
+
+	#conteudo{
+  		padding-bottom:2%;   /* Height of the footer */
+  		padding-top:32%;
+  	}
+
+}
+
+
+/*Small devices - smartphones*/
+
+@media screen and (min-width: 480px){
+
+	.logo{
+		width: 214px;
+		height: 140px;
+		float: left;
+		margin-left: 5%;
+		background: url(../img/shoram_200px.png) center center/214px no-repeat;
+		margin-bottom: 0;
+	}
+
+	.btn-menu{
+		margin-right: 2.1%;
+	}
+
+	.rodape{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.copyright{
+		margin-top: 10px;
+	}
+
+	#conteudo{
+  		padding-bottom:0%;   /* Height of the footer */
+	}
+
+}
+
+/*INTERMEDIÁRIO*/
+
+@media screen and (min-width: 615px){
+
+	#conteudo{
+  		padding-bottom:0%;   /* Height of the footer */
+  		padding-top:23%
+	}
+
+}
+
+/*Small devices - tablets*/
+
+@media screen and (min-width: 768px){
+
+	.logo{
+		margin-left: 5.1%;
+		margin-bottom: 0;
+	}
+
+	.btn-menu{
+		margin-right: 5.3%;
+	}
+
+	#conteudo{
+   		padding-bottom: 0;   /* Height of the footer */
+   		padding-top: 19%;
+	}
+
+}
+
+/*Medium devices - Tablets e Desktop*/
+
+@media screen and (min-width: 960px){
+
+	.title{
+		width: 70%;
+		float: left;
+		text-align: left;
+	}
+
+	.title h2{
+		font-size: 3em;
+	}
+
+	.title h3{
+		font-size: 2em;
+	}
+
+	.buttons{
+		width: 30%;
+		float: right;
+		margin-top: 0;
+	}
+
+	.cabecalho{
+		width: 93.5% !important;
+		/*float: left;*/
+		padding: 3% 4%;
+		padding-top: 0;
+		padding-bottom: 1%;
+	}
+
+	.logo{
+		margin-left: 5.6%;
+		margin-top: 0;
+		width: 250px;
+		height: 170px;
+		background: url(../img/shoram_250px.png) center center/250px no-repeat;
+	}
+
+	#conteudo{
+   		padding-bottom:0%;   /* Height of the footer */
+   		padding-top: 16%;
+	}
+
+	/*+++++*/
+
+	#myCarousel{
+	padding: 0;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 0;
+	display: table;
+	}
+
+	.carousel-caption h3{
+	    background-color: rgba(0,0,0,0.4)
+	}
+
+	.carousel-caption p{
+	    background-color: rgba(0,0,0,0.4);
+	}
+
+}
+
+/*Large devices - wide screens*/
+
+@media screen and (min-width: 1280px){
+
+	#entrarcadastro{
+		color: white;
+		display: block;
+		text-decoration: none;
+		background-color: #6d70a7;
+		width: 9em;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		float: right;
+		margin-right: 10%;
+		margin-left: 83.5%;
+		font-size: 1em;
+		position: relative;
+		z-index: 9;
+	}
+
+	.logo{
+		width: 250px;
+		height: 180px;
+		background: url(../img/shoram_250px.png) center center/250px no-repeat;
+		margin-left: 9.2%;
+		margin-bottom: 0;
+	}
+
+	.cabecalho{
+		width: 100% !important;
+		padding-top: 1%;
+		padding-bottom: 1%;
+	}
+
+	.btn-menu{
+		display: none;
+	}
+
+	.btn-close{
+		display: none;
+	}
+
+	.atual{
+		border-bottom: solid 2px black;
+		padding-bottom: 3px;
+		color: black;
+		text-decoration: none;
+		font-weight: bold;
+	}
+
+	.menu{
+		width: auto;
+		height: 56px;
+		line-height: 56px;
+		float: right;
+		display: block !important;
+		position: static;
+		margin-top: 5%;
+		background-color: white;
+		margin-right: 8.7%;
+	}
+
+	.menu li{
+		padding: 0;
+		float: left;
+	}
+
+	.menu li a{
+		color: black;
+		font-size: 1.72em;
+		/*padding: 15px;*/
+		margin-right: 15px;
+		margin-left: 25px;
+	}
+
+	.menu ul li a{
+		margin-left: 0;
+	}
+
+	.menu li a:hover{
+		border-bottom: solid 2px black;
+		padding-bottom: 3px;
+		color: black;
+		text-decoration: none;
+	}
+
+	.menu li a:visited{
+		border:none;
+		color: black;
+	}
+
+	#login{
+		font-size: 0px;
+		margin: 0px;
+		padding: 0;
+	}
+
+	#conteudo{
+  		padding-bottom:0%;   /* Height of the footer */
+  		padding-top: 15%;
+  	}
+
+}
+
+@media screen and (min-width: 1500px){
+
+  	#conteudo{
+  		padding-bottom:0%;   /* Height of the footer */
+  		padding-top: 10%;
+  	}
+
+/*@media screen and (min-height: : 1300px){
+
+	#conteudo{
+	   min-height: 99.4vh;
+	   min-height: 84.3vh;
+	   height: 100px;
+}*/
+
+}
+
+ }

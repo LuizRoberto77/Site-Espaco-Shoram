@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Agendamento - Espaço Shoram</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="description" content="Empresa de Massoterpia com ênfase em quick-massage para empresas e eventos.">
+	<meta name="keywords" content="Massoterapia, Quick-massage, eventos, massagem">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="Cipher Glass">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script src="js/jquery.js"></script>
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+	<!-- <script src="js/jquery.js"></script>
+	<script src="js/eventos.js"></script> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+	<link rel="icon" href="img/icon.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+	h1{
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	fieldset{
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+	#botoes{
+		width: 14em;
+		margin-top: 5%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.btn-confirma{
+		height: 40px;
+		border: solid thin #000;
+		background-color:#fff; 
+		/*margin-left: 21%;*/
+		/*margin-top: 5%;*/
+		font-size: 20px;
+		padding: 1%;
+	}
+
+	.btn-cancela{
+		height: 40px;
+		border: solid thin #000;
+		background-color:#fff;
+		margin-left: 5%;
+		font-size: 20px;
+		padding: 1%;
+	}
+	.borda{
+		border: solid thin #000;
+		cursor: pointer;
+	}
+	.borda2{
+		border: solid thin #000;
+		cursor: text;
+	}
+	@media screen and (min-width: 768px){
+		.btn-confirma{
+			
+			height: 40px;
+			border: solid thin #000;
+			background-color:#fff; 
+			/*margin-left: 34.5%;*/
+			/*margin-top: 5%;*/
+			padding: 0;
+			padding-right: 1%; 
+			padding-left: 1%;
+		}
+		.btn-cancela{
+			
+			height: 40px;
+			border: solid thin #000;
+			background-color:#fff;
+			margin-left: 5%;
+			padding: 0;
+			padding-right: 1%; 
+			padding-left: 1%;
+		}
+		.cal{
+			width: 50%;
+			float: right;
+
+		}
+		.s{
+			width: 35%;
+			float: left;
+		}
+	}
+	@media screen and (min-width: 960px){
+		.cal{
+			width: 60%;
+			float: right;
+
+		}
+		.s{
+			width: 35%;
+			float: left;
+		}
+		.btn-confirma{
+			/*margin-left: 39.5%;	*/
+			
+		}	
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+	<hr class="linha">
+
+	<a href="login.html" id="entrarcadastro">Entrar/Cadastre-se</a>
+
+	<header class="cabecalho container">
+		
+		<a href="index.html"><h1 class="logo"></h1></a>
+		<button class="btn-menu">
+			<i class="fa fa-bars fa-lg"></i>
+		</button>
+		<nav class="menu">
+			
+			<a class="btn-close">
+				<i class="fa fa-times" aria-hidden="true"></i>
+			</a>
+
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="trajetoria.html">Trajetória</a></li>
+				<li><a href="tecnicas.html">Técnicas</a></li>
+				<li><a href="agendamento.html" class="atual">Agendamento</a></li>
+				<li><a href="contato.html">Contato</a></li>
+				<li><a href="login.html" id="login">Login</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!-- Conteudo -->
+	<div id="conteudo">
+		<h1>Agendamento</h1>
+		<br>
+		<form action="confirmaagendamento.html" action="post">		
+			<fieldset>
+			<p class="s"> 
+			Selecione uma Técnica:<br>
+			<select name="tecnicaescolhida" class="borda">
+				<option value="">--Selecione--</option>
+				<option value="quick">Quick Massage</option>
+				<option value="auri">Auriculoterapia</option>
+				<option value="refle">Reflexologia podal</option>
+				<option value="classi">Massagem Clássica</option>
+				<option value="drena">Drenagem Linfática</option>
+				<option value="vento">Ventosaterapia</option>
+				<option value="moxa">Moxaterapia</option>
+				<option value="shiat">Shiatsu</option>
+				
+			</select>
+			<br>
+			<br>
+			Selecione uma Data:
+			<br>
+				<input type="date" name="data" min="" class="borda2">
+			<br>
+			<br>	
+			Selecione um Horário:
+			<br>
+				<input type="time" name="horario" min="" max="" class="borda2">
+			<br>
+			<br>
+			</p>
+			<div class="img"> 
+			<img src="img/calendario_exemplo.png" class="cal">
+			</div>
+		</fieldset>
+		
+		<div id="botoes">
+		<input type="submit" value="Confirmar" class="btn-confirma">
+		<input type="reset" value="Cancelar" class="btn-cancela">
+		</div>
+
+	</form>
+		<br>
+	</div>	
+	<!-- RODAPÉ -->
+
+	<footer class="rodape">
+		<div class="social-icons">
+			<a href="#"><i class="fa fa-facebook"></i></a>
+			<a href="#"><i class="fa fa-twitter"></i></a>
+			<a href="#"><i class="fa fa-google"></i></a>
+			<a href="#"><i class="fa fa-instagram"></i></a>
+			<a href="#"><i class="fa fa-envelope"></i></a>
+		</div>
+		<p class="copyright">Copyright © <a href="www.cipher.glass.com.br" class="direitos">Cipher Glass</a> 2018. Todos os direitos reservados.</p>
+	</footer>
+	</div
+
+
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+<script>
+	$(".btn-menu").click(function(){
+		$(".menu").show();
+	});
+
+	$(".btn-close").click(function(){
+		$(".menu").hide();
+	});
+</script>
+
+</body>
+</html>
